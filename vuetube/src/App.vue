@@ -3,7 +3,7 @@
     <SearchBar/>
     <MainVideo/>
     <VideoList/>
-    <button @click="test">test</button>
+    <!-- <button @click="getUrl">getUrl</button> -->
 
   </div>
 </template>
@@ -15,20 +15,15 @@ import VideoList from "@/components/VideoList"
 
 export default {
   name: 'App',
-  data() {
-    return {
-      
-    }
-  },
   components: {
     SearchBar,
     MainVideo,
     VideoList,
   },
   methods: {
-    test() {
-      this.$store.dispatch('getUrl')
-    }
+    // getUrl() {
+    //   this.$store.dispatch('getUrl')
+    // }
   }
 }
 </script>
