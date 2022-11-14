@@ -1,15 +1,14 @@
 <template>
   <div id="app">
+    <h1>진화 단계 가이드</h1>
     <nav>
-      <router-link :to="{name:'home'}">Home</router-link> |
-      <router-link :to="{name:'about'}">About</router-link> |
-      <router-link :to="{ name:'HelloView', params: {userName:'ssafy'} }">hello</router-link> |
-      <router-link :to="{ name:'login',}">login</router-link>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/heppeed">start</router-link>
     </nav>
     <router-view/>
+    <!-- <img v-if="isHome" src="@/assets/ssafy-banner.png" alt=""> -->
   </div>
 </template>
-
 
 <style>
 #app {

@@ -1,0 +1,41 @@
+<html>
+ <head>
+  <title> keycode </title>
+  <meta charset="utf-8">
+
+  <script type="text/javascript">
+    
+    
+    function keycod(evt)
+    {
+     var evt=evt?evt:window.event;
+     
+     var boxer=document.getElementById('box');
+     var kcode=evt.keyCode;
+     
+    
+     
+     if (kcode==37)
+     {
+      boxer.style.left=parseInt(boxer.style.left)-50+'px';  
+     }
+     else if (kcode==38)
+     {
+      boxer.style.top=parseInt(boxer.style.top)-50+'px';
+     }
+     else if (kcode==39)
+     {
+      boxer.style.left=parseInt(boxer.style.left)+50+'px'
+     }
+     else if (kcode==40)
+     {
+      boxer.style.top=parseInt(boxer.style.top)+50+'px';
+     }
+     
+    }
+  </script>
+ </head>
+ <body width="1000px" height="1000px" onkeydown="keycod(event)" >
+   <div id="box"   style="width:100px; height:100px; background:red; position:absolute; left:500px; top:300px;"></div>
+ </body>
+</html>
